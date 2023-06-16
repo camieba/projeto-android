@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+@font-face {
+        font-family: 'Bebas Neue';
+        src: url('BebasNeue-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Android';
+    src: url('idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+        --cor0: #c5ebd6;
+        --cor1: #83e1ad;
+        --cor2: #3ddc84;
+        --cor3: #2fa866;
+        --cor4: #1a5c37;
+        --cor5: #063d1e; 
+
+        --fonte-padrao: Arial, Helvetica, sans-serif;
+        --fonte-destaque: 'Bebas Neue', sans-serif;
+        --fonte-android: 'Android', cursive; 
+}
+
+* {padding: 0px;
+   margin: 0px;     
+
+}
+
+body {background-color: var(--cor0);
+        margin: 0px;
+        min-width: 400px;
+        max-width: 1440px;
+
+}
+
+header {background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+        color: white;
+        font-family: var(--fonte-padrao);
+        font-weight: normal;
+        min-height: 150%;
+        text-align: center;
+        padding: 40px 10px 15px 10px;
+        margin: auto;  
+             
+}
+
+header > h1 {font-size: 36px;
+        font-family: var(--fonte-destaque);
+        font-weight: normal;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.277);
+
+}
+
+header > p {
+        max-width: 1400px;
+        margin: auto;
+        padding: 10px 0px 0px 0px;
+        line-height: 1.5em;
+        font-size: 18px;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.304);      
+
+}
+
+nav {background-color: #063d1e;
+        padding: 10px;       
+
+        
+}
+
+nav > a {color: white;
+        font-family: var(--fonte-padrao);
+        padding: 10px;
+        text-decoration: none;
+        font-weight: normal;
+        border-radius: 5px;
+        transition-duration: 0.5s;
+        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.195);
+}
+
+nav > a:hover {background-color: var(--cor1);
+                color: var(--cor4);
+
+}
+
+
+main {background-color: white;
+        min-width: 300px;
+        max-width: 1400px;
+        padding: 20px;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-left: 85px;
+        margin-right: 85px;
+        border-radius: 0px 0px 5px 5px;
+        box-shadow: 0px 1px 6px 0px black;      
+        
+
+}
+
+main img {width: 100%;
+
+}
+
+main img.pequena {max-width: 350px;
+                  display: block;
+                  margin: auto;
+}
+
+
+p.texto {text-align: justify;
+         font-family: var(--fonte-padrao);
+         padding: 8px;
+        text-indent: 30px;
+        line-height: 1.5em;
+}
+
+
+
+h2#fonte {font-family: var(--fonte-android);
+          font-weight: normal;
+          font-size: 1.5em;
+          color: var(--cor4);
+          padding: 8px 10px;
+
+}
+
+h3.subtitulo {font-family: var(--fonte-android);
+            font-size: 1.2em;
+            background-image: linear-gradient(to right, var(--cor1), transparent);
+            color:var(--cor4) ;
+            padding: 2px 8px;
+            
+}
+
+main strong {color: var(--cor4);
+
+}
+
+main a {color: var(--cor4);                 
+   text-decoration: none;
+   font-weight: bold;     
+
+} 
+
+main a:hover {text-decoration: underline;
+               color: var(--cor3); 
+
+}
+
+div.video {margin: 5px 20px 30px -8px;
+        padding: 20px;
+        padding-bottom: 51.5%;
+        position: relative;
+
+
+}
+
+div.video >iframe {position: absolute;
+                top: 5%;
+                left: 5%;
+                width: 95%;
+                height: 90%;
+}
+
+aside {background-color: var(--cor0);
+        padding: 0px;
+        margin: 2px 10px;
+        border-radius: 10px 10px;
+        box-shadow: 1px 2px 3px 0px black;
+
+}
+
+aside > h3 {background-color: var(--cor3);
+        color: white;
+        padding: 8px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 10px 10px 0px 0px;
+
+}
+
+
+ul {    font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 5px 5px 5px 25px;
+        list-style-type: '\2714\00A0';
+        position: inside; 
+        columns: 2;  
+       
+}
+
+footer {background-color: #1a5c38;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.75em;
+        text-align: center;
+        padding: 5px;
+        margin: 2px 0px 0px 0px;
+        min-width: 400px;
+        max-width: 1440px;
+
+}
+
+footer a {text-decoration: none;
+        font-weight: bold;
+        color: white;
+}
+
+footer a:hover {text-decoration: underline;
+
+} 
